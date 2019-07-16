@@ -15,12 +15,12 @@ else{
 
 	//Split string into array of characters
 	split = s.split('');
-	console.log("Split string: " + split);
+	console.log('Split string: ' + split);
 
 	//Create a placeholder for smallest string
 	smallest = s;
 
-	//Loop through ${split} creating array of strings by removing one letter from ${split}
+	//Loop through ${split} comparing smallest string to newly joined substring
 	for(var i = 0; i < split.length; i++){
 		temp = [...split];
 		temp.splice(i, 1);
